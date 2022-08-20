@@ -73,5 +73,6 @@ def predict():
   else:
     return render_template('index.html', prediction_text='Bowling team Win the match', extra_text ="-> Prediction by " + Model)
 
-
-app.run()
+if __name__=="__main__":
+  app.run(debug=True)
+  
